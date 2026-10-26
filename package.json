@@ -1,0 +1,19 @@
+{
+  "name": "video-generator",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "remotion preview src/index.tsx --logLevel=error",
+    "render": "mkdir -p out && remotion render src/index.tsx VideoComposition out/video.mp4 --overwrite"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.211"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.5.4"
+  }
+}
